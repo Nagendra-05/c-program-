@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int n,i=1,k,esum,osum;
+printf("enter the number:");
+scanf("%d",&n);
+printf ("enter the k value:");
+scanf("%d",&k);
+while(i<=n)
+{
+   
+    if(i%k==0)
+    {
+    printf("%d ",i);
+    if(i%2==0)
+     esum=esum+i;
+     else
+      osum=osum+i;
+    }
+    i++;
+}
+    printf ("\neven sum=%d\nodd sum=%d",esum,osum);
+    
+
+}
